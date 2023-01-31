@@ -1,0 +1,67 @@
+<%- include('../front/nav.ejs') %>
+
+<section class="dashboard-wrap mtb-40 mt-5">
+    <div class="container">
+        <div class="body-content">
+            <div class="row">
+                <div class="col-md-2">
+                   
+                </div>
+                <div class="col-md-9"style="overflow-x: auto;">
+                    <div class="dash-right">
+                        <div class="dash-header">
+                            <div class="dash-title">
+                                <h1>Registration Data</h1>
+                            </div>
+                            <!-- <div class="dash-nav">
+                                <a href="/admin/addblogs" class="btn a">Add Blog</a>
+                            </div> -->
+                        </div>
+                        <table class="table table-bordered table-striped">
+                            <tr>
+                                <th> Name</th>
+                                <th>Email</th>
+                                <!-- <th>Last Name</th> -->
+                                <!-- <th>Mothaer Name</th> -->
+                                <!-- <th>Father Name</th> -->
+                                <th>Mobile</th>
+                                <th>college</th>
+                                <!-- <th>Pincode</th> -->
+                                
+                                <th>Address</th>
+                                <th>Course</th>
+                                <th>gender</th>
+                                <th>branch</th>
+                                
+                                <!-- <th>Action</th> -->
+                            </tr>        
+                            <td><%= MT.username %></td>
+                            <td><%= MT.email %></td>
+                            <td><%= MT.mobile %></td>
+                            <td><%= MT.college %></td>
+                            <td><%= MT.address %></td>
+                            <td><%= MT.course %></td>
+                            <td><%=MT.gender %></td>
+                            <td><%=MT.branch %></td>
+                           
+                                <tr>
+                               
+                                  
+
+                            
+                         
+                            
+                            
+                        </table>
+                    </div>   
+                </div>
+                <div class="col-md-1">
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<%- include('../front/footer.ejs') %>

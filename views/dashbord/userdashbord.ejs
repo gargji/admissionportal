@@ -1,0 +1,124 @@
+
+<%- include('../front/nav.ejs') %>
+</body>
+
+</html>
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <!-- Mobile Meta -->
+        <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <!-- video section end -->
+        <title></title>
+        
+
+
+        <!-- <link rel="stylesheet" href="../dashbord/css1/style.css"> -->
+        <!-- <link rel='stylesheet' href='css1/header.css' /> -->
+        <!-- <link rel='stylesheet' href='css1/about.css' /> -->
+        <meta charset="UTF-8">
+
+        
+
+
+       
+
+
+
+
+    </head>
+
+    <body>
+        
+        <div class="col-md-12 text-center  ">
+            <video class="w-100 d-block video " autoplay="autoplay" muted="muted"  >
+                <source src="/Pexels Videos 2002527.mp4" type="video/mp4" >
+
+            </video>
+            <div class="img-title mt-5 ">
+
+                <h1 class="contactline1">Admission Portal
+                </h1>
+
+                
+                <h3 class="mt-5"> <%= n %></h3>
+    
+            </div>
+            <div class="container mt-5">
+                <div class="row">
+                <div class="col-md-4 mt-3">
+                    <img src="https://www.sharda.ac.in/blog/wp-content/uploads/2020/07/BTech-in-Computer-Science2.jpg" alt="" class="img-fluid" style="height:150px;">
+                    <h3>B.Tech</h3>
+                    <p>B.Tech is a professional undergraduate engineering degree</p>
+                   <% if(BT){ %>
+                    <a href="/userdatadisplay1" class="btn btn-info">display</a>
+                    <%} else{ %>
+                        <a href="/btechform" class="btn btn-info">Register</a>
+
+                        <% }%>
+                </div>
+                <div class="col-md-4 mt-3">
+                    <img src="https://www.iiitkottayam.ac.in/data/images/ai.jpeg" alt="" class="img-fluid" style="height:150px;">
+                    <h3>M.Tech</h3>
+                    <p>M.Tech is a post-graduation degree in engineering</p>
+                    <% if(MT){ %>
+                    <a href="/userdatadisplay3" class="btn btn-info">display</a>
+                    <% }else{ %>
+                        <a href="/mtechform" class="btn btn-info">Register</a>
+                        <% }%>
+
+                </div>
+                <div class="col-md-4 mt-2">
+                    <img src="https://blog.mmumullana.org/wp-content/uploads/2018/07/Blog-Creative-MCA.jpg" alt="" class="img-fluid" style="height:150px;" >
+                    <h3>M.C.A</h3>
+                    <p>M.C.A is a post-graduation degree in computer science</p>
+                    <!-- <button  class="btn btn-info" type="button" href="/admin/regi">Register</button> -->
+                    <% if(M){ %>
+                   
+                 <a href="/userdatadisplay3" class="btn btn-info">display</a>
+                 <% }else{ %>
+                    <a href="/mcaform" class="btn btn-info">Register</a>
+                    <% }%>
+                </div>
+              </div>
+             
+                </div>
+                <%- include('../front/footer.ejs') %>
+       
+
+       
+
+
+
+
+       
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
+        <!-- VIDEO BG PLUGINS -->
+        <script src="js/videobg.js"></script>
+
+
+    
+   
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="/assets/js/bootstrap.min.js"></script>

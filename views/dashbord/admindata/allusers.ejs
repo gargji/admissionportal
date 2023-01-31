@@ -1,0 +1,49 @@
+<%- include('../Adminnavbar.ejs') %>
+
+
+
+<div class="container mt-5" style="overflow-x: auto;">
+    <div class="row">
+   
+  </div>
+  <table class="table table-bordered table-striped" >
+    <tr>
+        <th> Name</th>
+        <th>Email</th>
+        <!-- <th>Last Name</th> -->
+        <!-- <th>Mothaer Name</th> -->
+        <!-- <th>Father Name</th> -->
+        <th>role</th>
+      
+        
+        
+        
+        <th>Action</th>
+    </tr>         <% data.forEach((item)=>{ %>
+
+    <td><%=item.name %></td>
+    <td><%=item.email %></td>
+    <td><%=item.role %></td>
+    
+
+ 
+    <td> <a href="/admin/student_view/<%= item._id %>" class="btn btn-success bi bi-eye"></a><br>
+        <a href="/admin/student_edit/<%= item._id %>" class="btn btn-info bi bi-pencil"></a><br>
+        <a href="/admin/student_delete/<%= item._id %>" class="btn btn-danger bi bi-trash"></a>
+    </td>
+        <tr>
+            <%  }) %>
+       
+          
+
+    
+ 
+    
+    
+</table>
+    </div>
+
+
+
+
+<%- include('../../front/footer.ejs') %>
