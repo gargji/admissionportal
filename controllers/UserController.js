@@ -74,12 +74,12 @@ class UserController {
                      // token genrate
                      var token = jwt.sign({ userId: user._id }, 'Rahul12345');
                     //  console.log("HY")
-                     console.log(token)
+                    //  console.log(token)
                     //  console.log("hy")
                      res.cookie('token',token)
                     //  console.log(r)
                     const Role=user.role
-                console.log(Role)
+                // console.log(Role)
                 if(Role=="Admin"){  res.redirect('/dashboard/Admin')}
                 else
                 {
