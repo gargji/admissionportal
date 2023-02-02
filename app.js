@@ -4,7 +4,7 @@ const app = express()
 const port = 3000
 
 
-const connectDB=require('./db/connectDB')
+const connectDB=require('./db/connectDB.JS')
 connectDB()
 const flash = require("connect-flash");
 const session =require('express-session')
