@@ -65,7 +65,7 @@ class FrontendController {
       //  console.log(data)
        
         // console.log(MCA)
-        res.render('dashbord/admindashboard',{n:name ,id:_id,data:data})
+        res.render('dashbord/Admindashboard',{n:name ,id:_id,data:data})
     }
     static about =async(req,res)=>{
       const {name,_id,email} =req.data1
