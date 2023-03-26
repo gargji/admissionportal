@@ -52,7 +52,7 @@ static btechinsert=async(req,res)=>{
                 req.flash('success','Registration successfully' )
                 // console.log("sucess")
                 // return res.redirect('/admin/display')
-                return res.redirect('/userdatadisplay')
+                return res.redirect('/userdatadisplay1')
 
             }catch(error){
                 console.log(error)
@@ -99,7 +99,7 @@ static mtechinsert=async(req,res)=>{
                     await result.save()
                     req.flash('success','Registration successfully' )
                     console.log("sucess")
-                    return res.redirect('/userdatadisplay')
+                    return res.redirect('/userdatadisplay2')
     
                 }catch(error){
                     console.log(error)
@@ -147,7 +147,7 @@ static mcainsert=async(req,res)=>{
                     await result.save()
                     req.flash('success','Registration successfully' )
                     console.log("sucess")
-                    return res.redirect('/userdatadisplay')
+                    return res.redirect('/userdatadisplay3')
     
                 }catch(error){
                     console.log(error)
